@@ -9,6 +9,7 @@ import ContactPage from './Pages/ContactPage'
 import Navbar from './Common/NavBar'
 import FooterSection from './Common/FooterSection'
 import BackgroundAnimation from './Common/BackgroundAnimation'
+import ContactForm from './Pages/ContactForm';
 
 
 function Layout() {
@@ -42,6 +43,10 @@ function Layout() {
        {
          path: 'contact',
          element: <ContactPage />
+       },
+       {
+         path: 'contactform',
+         element: <ContactForm />
        }
      ]
    }
