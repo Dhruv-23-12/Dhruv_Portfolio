@@ -30,7 +30,7 @@ function ProjectsPage() {
       img:Portfolio,
       title: 'My Portfolio',
       desc: 'A showcase of my work, skills, and experience as a developer.',
-      github: 'https://github.com/Dhruv-23-12/'
+      github: 'https://github.com/Dhruv-23-12/Dhruv_Portfolio',
     }
   ];
 
