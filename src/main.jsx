@@ -9,8 +9,6 @@ import ContactPage from './Pages/ContactPage'
 import Navbar from './Common/NavBar'
 import FooterSection from './Common/FooterSection'
 import BackgroundAnimation from './Common/BackgroundAnimation'
-import ContactForm from './Pages/ContactForm';
-
 
 function Layout() {
   return (
@@ -23,39 +21,32 @@ function Layout() {
   )
 }
 
-  const AllRouter = createBrowserRouter([
-    {
-     path: '/',
-     element: <Layout />,  // ✅ Now your layout wraps all pages!
-     children: [
-       {
-         index: true, // same as path: ''
-         element: <HomePage />
-       },
-       {
-         path: 'about',
-         element: <AboutContact />
-       },
-       {
-         path: 'projects',
-         element: <ProjectsPage />
-       },
-       {
-         path: 'contact',
-         element: <ContactPage />
-       },
-       {
-         path: 'contactform',
-         element: <ContactForm />
-       }
-     ]
-   }
- ])
-
+const AllRouter = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,  // ✅ Now your layout wraps all pages!
+    children: [
+      {
+        index: true, // same as path: ''
+        element: <HomePage />
+      },
+      {
+        path: 'about',
+        element: <AboutContact />
+      },
+      {
+        path: 'projects',
+        element: <ProjectsPage />
+      },
+      {
+        path: 'contact',
+        element: <ContactPage />
+      }
+    ]
+  }
+])
 
 createRoot(document.getElementById('root')).render(
-
-
   <StrictMode>
     <RouterProvider router={AllRouter} />
   </StrictMode>,
